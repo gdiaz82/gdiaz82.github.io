@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef7c4952f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="background-container">
+            <div class="bg-image image-1"></div>
+            <div class="bg-image image-2"></div>
+            <div class="bouncing-orb">
+                <div class="orb-core"></div>
+            </div>
+        </div>
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contáctame</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Ingeniero Civil Electrónico</p>
+            <h1>Hola!<br>Soy <span>Gabriel</span> Díaz</h1>
+        </div>
+    </div>
+</div>
+<!-----------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Sobre mí</h1>
+                <p>Ingeniero Civil Electrónico con mención en Computadores. Apasionado a la tecnología y la innovación. Posee
+                una sólida formación en las áreas de Machine Learning y Procesamiento Digital de Señales, con experiencia
+                en el desarrollo de soluciones basadas en análisis de datos, inteligencia artificial y automatización. Motivado
+                por la mejora continua, la investigación aplicada y el desarrollo de soluciones que integren hardware y
+                software para resolver problemas complejos. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                    <p class="tab-links" onclick="opentab('education')">Educación</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+    <ul>
+        <li><span>Lenguajes de Programación</span><br>Python, C, C++ (Avanzado) · MATLAB, Java (Intermedio) · JavaScript, HTML (Básico-Intermedio)</li>
+        <li><span>Software & Herramientas</span><br>Git, Linux, Docker · MATLAB, Excel · AWS, GCP, Azure</li>
+        <li><span>Competencias Técnicas</span><br>Machine Learning · Computer Vision · Procesamiento de datos · APIs · Sistemas embebidos</li>
+        <li><span>Idiomas</span><br>Inglés (C1 Avanzado) · Francés (B2 Intermedio Certificado)</li>
+    </ul>
+</div>
+<div class="tab-contents" id="experience">
+    <ul>
+        <li><span>Lanek · Práctica Profesional</span><br>Ene - Mar 2025 · Desarrollo de plataforma para procesamiento y clasificación de datos de acelerometría</li>
+        <li><span>TriChile · Práctica Industrial</span><br>Ene - Mar 2023 · Mejora de ROV submarino: sistema de energización, cámara y comunicaciones</li>
+    </ul>
+</div>
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>Ingeniería Civil Electrónica</span><br>Universidad Técnica Federico Santa María · 2019-2025</li>
+    </ul>
+</div>
+            </div>
+        </div> 
+    </div>
+</div>
+<!-- ----------------portfolio--------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Mis Proyectos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/movie.jpg">
+                <div class="layer">
+                    <h3>Sistema de Recomendación de Películas</h3>
+                    <p>Sistema que utiliza machine learning para recomendarle películas al usuario.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/movie.jpg">
+                <div class="layer">
+                    <h3>Sistema de Recomendación de Películas</h3>
+                    <p>Sistema que utiliza machine learning para recomendarle películas al usuario.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/movie.jpg">
+                <div class="layer">
+                    <h3>Sistema de Recomendación de Películas</h3>
+                    <p>Sistema que utiliza machine learning para recomendarle películas al usuario.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Saber más</a>
+    </div>
+</div>
+<!-- -------------contact---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contáctame</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>gdiazlizana@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+56956430636</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gabriel-d%C3%ADaz-126820272/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CVGabrielDiaz.pdf" download class="btn btn2">Descargar CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Tu Correo" required>
+                    <textarea name="Mensaje" rows="6" placeholder="Tu Mensaje"></textarea> 
+                    <button type="submit" class="btn btn2">Enviar</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+ </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");  
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");  
+        }        
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    function initOrb() {
+    const orb = document.querySelector('.bouncing-orb');
+    
+    // Detectar si es móvil
+    const isMobile = window.innerWidth <= 600;
+    
+    // Ajustar valores según dispositivo
+    let posX = isMobile ? 60 : 55;
+    let posY = isMobile ? 50 : 40;
+    let speedX = isMobile ? 0.15 : 0.2;
+    let speedY = isMobile ? 0.08 : 0.1;
+    
+    // Límites según dispositivo
+    const minX = isMobile ? 10 : 50;
+    const maxX = isMobile ? 80 : 90;  
+    const minY = isMobile ? 10 : 35;
+    const maxY = isMobile ? 85 : 75;
+    
+    const colors = [
+        'radial-gradient(circle at 30% 30%, #00ccff, #ff004f)',
+        'radial-gradient(circle at 70% 20%, #ff004f, #8000ff)',
+        'radial-gradient(circle at 20% 70%, #00ff88, #00ccff)',
+        'radial-gradient(circle at 80% 60%, #ff0080, #ff6b6b)'
+    ];
+    
+    function animate() {
+        posX += speedX;
+        posY += speedY;
+        
+        if (posX <= minX || posX >= maxX) {
+            speedX = -speedX;
+            changeColor();
+        }
+        if (posY <= minY || posY >= maxY) {
+            speedY = -speedY;
+            changeColor();
+        }
+        
+        orb.style.left = posX + '%';
+        orb.style.top = posY + '%';
+        
+        requestAnimationFrame(animate);
+    }
+    
+    function changeColor() {
+        const orbCore = document.querySelector('.orb-core');
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        orbCore.style.background = randomColor;
+    }
+    
+    animate();
+}
+
+document.addEventListener('DOMContentLoaded', initOrb);
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-230px";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxGxE_pdeimVGU59Z866c0cjGbfLRNTC_iUEQKrYIqFqvU4OkVR0pGGq3HiG-tcOokH1w/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML =  "Mensaje enviado correctamente"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
